@@ -1,0 +1,645 @@
+/* 引入现代全局字体与基础文本颜色 */
+body {
+	padding-top: 15px;
+	padding-bottom: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	color: #334155; 
+}
+
+/* 标题统一字体权重 */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	color: #1E293B;
+}
+
+/* Custom container */
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.container>hr {
+	margin: 20px 0;
+	border-top: 1px solid #E2E8F0; 
+}
+
+/* =========================================================
+   Navbar (顶部导航栏) - 保持与整体深色系协调
+   ========================================================= */
+/* =========================================================
+   Navbar (顶部导航栏) - 保持与整体深色系协调
+   ========================================================= */
+   .navbar .navbar-inner {
+	padding: 0;
+	background-color: #0F172A; 
+	background-image: none;    
+	border: none; /* 先清除默认的旧边框 */
+	
+	/* 新增：与 Footer 保持完全一致的底部蓝色边框 */
+	border-bottom: 4px solid #2563EB; 
+	
+	/* 阴影效果保留，让导航栏看起来更有层次 */
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .nav {
+	margin: 0;
+	display: table;
+	width: 100%;
+}
+
+.navbar .nav li {
+	display: table-cell;
+	width: 1%;
+	float: none;
+}
+
+.navbar .nav li a {
+	font-weight: 600;
+	text-align: center;
+	border-left: 1px solid rgba(255, 255, 255, 0.05);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	color: #D1D5DB; 
+	text-shadow: none; 
+	transition: all 0.2s ease;
+}
+
+.navbar .nav li a:hover,
+.navbar .nav li a:focus,
+.navbar .nav .active > a {
+	background-color: #1E293B; 
+	color: #FFFFFF;
+}
+
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+body>.navbar {
+	font-size: 13px
+}
+
+body>.navbar .brand {
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 20px;
+	float: right;
+	font-weight: 700;
+	color: #F8FAFC; 
+	text-shadow: none; 
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+body>.navbar .brand:hover {
+	text-decoration: none;
+	color: #60A5FA; 
+}
+
+
+/* Sidenav for Docs */
+@media screen and (max-width: 768px) {
+	.bs-docs-sidenav {
+		display: none !important;
+	}
+}
+
+.bs-docs-sidenav {
+	width: 228px;
+	margin: 30px 0 0;
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+	border: 1px solid #F1F5F9;
+}
+
+.bs-docs-sidenav>li>a {
+	display: block;
+	width: 200px;
+	margin: 0 0 -1px;
+	padding: 8px 14px;
+	border: 1px solid #E2E8F0; 
+	color: #475569;
+}
+
+.bs-docs-sidenav>li>a.subhead {
+	display: block;
+	width: 168px;
+	margin: 0 0 -1px;
+	padding: 8px 30px;
+	border: 1px solid #E2E8F0;
+	font-size: 12px;
+	color: #64748B;
+}
+
+.bs-docs-sidenav>li:first-child>a {
+	-webkit-border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+
+.bs-docs-sidenav>li:last-child>a {
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+
+.bs-docs-sidenav>.active>a {
+	position: relative;
+	z-index: 2;
+	padding: 9px 15px;
+	border: 0;
+	background-color: #F8FAFC;
+	color: #2563EB; 
+	font-weight: 600;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-left: 3px solid #2563EB; 
+}
+
+.bs-docs-sidenav>li>a:hover {
+	background-color: #F1F5F9;
+	color: #0F172A;
+}
+
+.bs-docs-sidenav a:hover .icon-chevron-right {
+	opacity: .5
+}
+
+.bs-docs-sidenav.affix {
+	top: 10px
+}
+
+.bs-docs-sidenav.affix-bottom {
+	position: absolute;
+	top: auto;
+	bottom: 270px;
+}
+
+/* Responsive */
+.affix {
+	top: 0px
+}
+
+#media {
+	margin-top: 70px
+}
+
+#media .header {
+	margin-left: 0;
+	margin-bottom: 56px;
+	margin-top: 30px;
+}
+
+#media .post_row {
+	margin-left: 0;
+	margin-bottom: 40px;
+}
+
+#media .lastpost_row {
+	margin-bottom: 0
+}
+
+#media .post_row .post {
+	background: #fff;
+	border-radius: 8px; 
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+	width: 487px;
+	height: 616px;
+	transition: all 0.3s ease; 
+}
+
+#media .post_row .last {
+	margin-right: 0
+}
+
+#media .post_row .post .img {
+	position: relative;
+	text-align: center;
+	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+}
+
+#media .post_row .post .img .date {
+	background: #2563EB; 
+	position: absolute;
+	padding: 4px 8px;
+	top: 0;
+	left: 11px;
+	border-radius: 0 0 4px 4px; 
+}
+
+#media .post_row .post .img .date p {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+	letter-spacing: 0.5px;
+}
+
+#media .post_row .post .img img {
+	height: 275px;
+	width: 410px;
+	object-fit: cover;
+}
+
+#media .post_row .post .text {
+	margin: 18px auto 0;
+	width: 83%;
+}
+
+#media .post_row .post .text h5 {
+	margin: 0 0 8px 0;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+#media .post_row .post .text h5 a {
+	color: #0F172A;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+#media .post_row .post .text span.date {
+	color: #94A3B8;
+	display: block;
+	margin-bottom: 12px;
+	font-size: 13px;
+}
+
+#media .post_row .post .text p {
+	margin: 0;
+	line-height: 1.6;
+	font-size: 14px;
+	color: #475569;
+}
+
+#media .post_row .post .author_box {
+	margin: 12px auto 20px;
+	border-top: 1px solid #F1F5F9; 
+	overflow: hidden;
+	text-align: left;
+	width: 85%;
+	padding-top: 12px;
+}
+
+#media .post_row .post .author_box h6 {
+	margin: 0 0 3px 0;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 600;
+	color: #64748B;
+}
+
+#media .post_row .post .author_box p {
+	color: #94A3B8;
+	font-size: 12px;
+	line-height: 14px;
+	margin: 0;
+}
+
+#media .post_row .post .author_box img {
+	float: right;
+	border-radius: 50%; 
+}
+
+#media .post_row .post a.plus_wrapper {
+	width: 99%;
+	text-align: center;
+	background: #F8FAFC; 
+	display: none;
+	border-radius: 0px 0px 8px 8px;
+	padding: 6px 0px 2px;
+	margin: 0 auto 1px;
+	transition: background 0.2s;
+}
+
+#media .post_row .post a.plus_wrapper span {
+	color: #2563EB;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#media .post_row .post:hover a.plus_wrapper {
+	display: block
+}
+
+#media .post_row .post:hover a.plus_wrapper:hover {
+	background: #F1F5F9;
+}
+
+#media .post_row .post:hover {
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	transform: translateY(-2px); 
+}
+
+#media .post_row .post:hover .text h5 a {
+	color: #2563EB;
+}
+
+.map .box_wrapp {
+	position: absolute;
+	margin: 15px auto;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+	padding: 30px 0 30px;
+	background: white;
+	border-radius: 8px;
+	margin-top: 25px;
+}
+
+.map .box_wrapp .box_cont {
+	margin: 30px auto;
+	width: 76%;
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.section-header h1,
+.title-text {
+	font-size: 30px;
+	margin: 12.5px 0;
+	font-weight: 300; 
+	margin-bottom: 25px;
+	line-height: 55px;
+	color: #0F172A;
+}
+
+.feature-item {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.feature-item:hover {
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+	transform: translateY(-2px);
+}
+
+.feature-item img {
+	margin-left: 15px;
+	margin-right: 15px;
+	max-width: 90%;
+	height: 200px;
+	border-radius: 4px;
+}
+
+.feature-item h5 {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.feature-item p {
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #475569;
+	line-height: 1.6;
+}
+
+.feature-heading {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.feature-heading a {
+    color: #0F172A;
+}
+
+.feature-heading a:hover {
+	text-decoration: none;
+    color: #2563EB;
+}
+
+.feature-button {
+	font-size: 16px;
+	background-image: none;
+	box-shadow: none;
+	margin-bottom: 10px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.subhead {
+	text-align: left;
+	border-bottom: 1px solid #E2E8F0;
+	padding-bottom: 10px;
+}
+
+/* =========================================================
+   Jumbotron (实验室标题衬底) - 与 footer 背景色 (#0F172A) 完全一致
+   ========================================================= */
+.jumbotron {
+	position: relative;
+	padding: 45px 0px 35px 0px;
+	color: #fff;
+	text-align: center;
+	/* 将原本复杂的黑色渐变替换为与 Footer 相同的纯色，实现完美首尾呼应 */
+	background-color: #0F172A; 
+	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+
+.jumbotron:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: .4;
+}
+
+/* 重新选择 Jumbotron 内部标题颜色，以在深蓝背景上获得最高对比度 */
+.jumbotron h1 {
+	color: #FFFFFF; /* 纯白在深蓝上对比度最高、最清晰 */
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 增加一点下阴影，让标题更立体突出 */
+}
+
+/* Jumbotron 副标题 (Department of Physics...) */
+.jumbotron .lead {
+	color: #E2E8F0; /* 采用浅灰蓝色，与纯白主标题拉开层次 */
+	margin-bottom: 0px;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 1.5;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+img.float-left {
+	float: left;
+	margin-top: 9px;
+	margin-left: 0px;
+	margin-right: 30px;
+	margin-bottom: 12px;
+	border-radius: 4px;
+}
+
+img.float-right {
+	float: right;
+	margin-top: 9px;
+	margin-right: 0px;
+	margin-bottom: 12px;
+	margin-left: 30px;
+	border-radius: 4px;
+}
+
+img.publications-thumb {
+	width: 142px;
+	height: 188px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+
+.caption {
+	margin: 10px;
+	color: #64748B;
+	font-size: 13px;
+	text-align: center;
+}
+
+.responsive-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 60px;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 93.5%;
+	height: 93.5%;
+	border-radius: 8px;
+}
+
+.video-caption {
+	margin: 10px;
+}
+
+.accordion {
+	margin-bottom: 20px;
+	margin-right: 40px;
+}
+
+.thumbnail>img.sponsor {
+	width: 212px;
+	height: 150px;
+	object-fit: contain;
+}
+
+img.carousel-image {
+	width: 100%;
+	border-radius: 8px;
+}
+
+li.publication {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.page-header h3 a:hover {
+	text-decoration: none;
+	color: #2563EB;
+}
+
+iframe.map-frame {
+	border: none;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 550px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+ul.sponsors {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* =========================================================
+   Footer (页脚) - 这里的背景色 #0F172A 现在已与顶部的 Jumbotron 对应
+   ========================================================= */
+#footer {
+	z-index: 10;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+	border-top-width: 4px; 
+	border-top-style: solid;
+	border-top-color: #2563EB; 
+	background-color: #0F172A; /* 与 jumbotron 保持一致 */
+	border: 0;
+	border-top: 4px solid #2563EB; 
+	font-size: 100%;
+	vertical-align: baseline;
+	text-align: center;
+}
+
+#footer h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #93C5FD; 
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #1E293B; 
+	line-height: 35px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	font-weight: 600;
+}
+
+#footer a img {
+	margin-top: 40px;
+}
+
+#footer p,
+#footer address {
+	color: #D1D5DB; 
+	font-size: 13px; 
+	line-height: 1.6;
+}
+
+/* 消除 Jumbotron 和 Navbar 之間的白色縫隙 */
+.jumbotron {
+    margin-bottom: 0 !important; /* 強制移除標題區塊底部的預設邊距 */
+    border-bottom: none !important; /* 確保沒有預設邊框 */
+}
+
+.masthead, 
+.navbar {
+    margin-top: 0 !important; /* 強制移除導覽列頂部的預設邊距 */
+}
