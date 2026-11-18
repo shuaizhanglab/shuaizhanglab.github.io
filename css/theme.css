@@ -572,7 +572,8 @@ li.publication {
     margin: 12px 0 24px;
 }
 
-#published .publications-header h2 {
+#published .publications-header h2,
+#research-content .research-intro h2 {
     margin: 0 0 10px;
     color: #0f172a;
     font-family: Georgia, "Times New Roman", serif;
@@ -709,23 +710,13 @@ ul.sponsors {
 
 /* Research */
 #research-content .research-intro {
-    padding: clamp(20px, 4vw, 40px);
-    border-top: 3px solid #2563eb;
-    background-color: #eef5fc;
-}
-
-#research-content .research-intro h2 {
-    margin: 0 0 12px;
-    color: #0f172a;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.25rem, 6vw, 4rem);
-    line-height: 1.1;
+    margin: 12px 0 22px;
 }
 
 #research-content .research-intro p {
     max-width: 64ch;
     margin: 0;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.55;
 }
 
@@ -743,7 +734,7 @@ ul.sponsors {
 
 #research-content .research-area h3 {
     margin: 0 0 10px;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.25;
 }
 
