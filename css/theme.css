@@ -18,6 +18,33 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 1000px;
 }
 
+/* Shared header and footer width */
+.site-content,
+#footer {
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-content {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding-bottom: 24px;
+}
+
+.site-content .navbar .container {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .site-content,
+    #footer {
+        width: 100%;
+    }
+}
+
 .container>hr {
 	margin: 20px 0;
 	border-top: 1px solid #E2E8F0; 
@@ -659,9 +686,9 @@ ul.sponsors {
    ========================================================= */
 #footer {
 	z-index: 10;
-	margin-top: 50px;
+	margin-top: 0;
 	margin-bottom: 0px;
-	padding-bottom: 25px;
+	padding: 0 clamp(12px, 2.5vw, 26px) 25px;
 	border-top-width: 4px; 
 	border-top-style: solid;
 	border-top-color: #2563EB; 
@@ -774,11 +801,10 @@ ul.sponsors {
 }
 
 /* Home */
-.home-page > .container {
+.home-page > .site-content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    min-height: 100svh;
+    padding-bottom: 0;
 }
 
 #home-content {
@@ -788,10 +814,6 @@ ul.sponsors {
     justify-content: center;
     padding: clamp(28px, 6vh, 72px) 12px;
     text-align: center;
-}
-
-.home-page #footer {
-    margin-top: 0;
 }
 
 #home-content h2 {
@@ -810,17 +832,17 @@ ul.sponsors {
 }
 
 @media (max-width: 560px) {
-    .home-page .navbar .nav {
+    .site-content .navbar .nav {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .home-page .navbar .nav li {
+    .site-content .navbar .nav li {
         display: block;
         width: auto;
     }
 
-    .home-page .navbar .nav li a {
+    .site-content .navbar .nav li a {
         padding: 9px 4px;
         border-radius: 0;
         font-size: 11px;
