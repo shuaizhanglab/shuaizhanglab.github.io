@@ -573,7 +573,8 @@ li.publication {
 }
 
 #published .publications-header h2,
-#research-content .research-intro h2 {
+#research-content .research-intro h2,
+#gallery-content h2 {
     margin: 0 0 10px;
     color: #0f172a;
     font-family: Georgia, "Times New Roman", serif;
@@ -835,7 +836,7 @@ ul.sponsors {
 .contact-scholar {
     margin: auto 0 10px;
     padding-top: 16px;
-    text-align: right;
+    text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -843,3 +844,38 @@ ul.sponsors {
         display: flex;
     }
 }
+/* Gallery */
+#gallery-content {
+    margin: 24px 0 36px;
+}
+
+#gallery-content .gallery-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 16fr) minmax(0, 9fr);
+    gap: 20px;
+    margin-top: 18px;
+}
+
+#gallery-content figure {
+    margin: 0;
+}
+
+#gallery-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#gallery-content figcaption {
+    margin-top: 8px;
+    color: #334155;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    #gallery-content .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
