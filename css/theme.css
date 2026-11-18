@@ -567,6 +567,44 @@ li.publication {
 	line-height: 1.6;
 }
 
+/* Publications */
+#published .publication-year {
+    margin: 24px 0 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 20px;
+}
+
+#published .publication-list {
+    margin: 0 0 26px 25px;
+    font-size: 15px;
+}
+
+#published .publication::marker {
+    color: #64748b;
+}
+
+#published .publication-title {
+    margin: 0 0 3px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+#published .publication-title a {
+    color: #a71919;
+}
+
+#published .publication-authors,
+#published .publication-citation {
+    margin: 0;
+    line-height: 1.5;
+}
+
+#published .publication-citation cite {
+    font-style: italic;
+}
+
 .page-header h3 a:hover {
 	text-decoration: none;
 	color: #2563EB;
