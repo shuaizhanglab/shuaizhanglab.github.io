@@ -771,3 +771,42 @@ ul.sponsors {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+/* Home */
+#home-content {
+    padding: clamp(56px, 10vw, 118px) 12px clamp(64px, 12vw, 140px);
+    text-align: center;
+}
+
+#home-content h1 {
+    margin: 0 0 22px;
+    color: #0f172a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 5.4vw, 3.25rem);
+    line-height: 1.18;
+}
+
+#home-content p {
+    max-width: 61ch;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2.1vw, 1.1875rem);
+    line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+    .home-page .navbar .nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .home-page .navbar .nav li {
+        display: block;
+        width: auto;
+    }
+
+    .home-page .navbar .nav li a {
+        padding: 9px 4px;
+        border-radius: 0;
+        font-size: 11px;
+    }
+}
