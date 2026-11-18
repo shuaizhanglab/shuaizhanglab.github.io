@@ -773,9 +773,24 @@ ul.sponsors {
 }
 
 /* Home */
+.home-page > .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
 #home-content {
-    padding: clamp(56px, 10vw, 118px) 12px clamp(64px, 12vw, 140px);
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(28px, 6vh, 72px) 12px;
     text-align: center;
+}
+
+.home-page #footer {
+    margin-top: 0;
 }
 
 #home-content h2 {
