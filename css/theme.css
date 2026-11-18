@@ -825,3 +825,21 @@ ul.sponsors {
         font-size: 11px;
     }
 }
+
+/* Contact */
+.contact-layout > .contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-scholar {
+    margin: auto 0 10px;
+    padding-top: 16px;
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .contact-layout {
+        display: flex;
+    }
+}
