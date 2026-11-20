@@ -912,3 +912,13 @@ ul.sponsors {
     }
 }
 
+/* Site title link */
+#overview h1 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#overview h1 > a:hover,
+#overview h1 > a:focus-visible {
+    text-decoration: underline;
+}

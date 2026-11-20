@@ -8,18 +8,41 @@
       <link rel="canonical" href="https://shuaizhanglab.com/">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-      <link href="css/theme.css?v=site-width-8a72" rel="stylesheet">
+      <link href="css/theme.css?v=site-identity-a4ce" rel="stylesheet">
       <meta property="og:site_name" content="Shuai Zhang Lab">
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Shuai Zhang Lab",
-        "alternateName": [
-          "复旦大学张帅课题组",
-          "Shuai Zhang Lab at Fudan University"
-        ],
-        "url": "https://shuaizhanglab.com/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Shuai Zhang Lab",
+            "alternateName": [
+              "复旦大学张帅课题组",
+              "Shuai Zhang Lab at Fudan University"
+            ],
+            "url": "https://shuaizhanglab.com/",
+            "@id": "https://shuaizhanglab.com/#website",
+            "publisher": {
+              "@id": "https://shuaizhanglab.com/#lab"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://shuaizhanglab.com/#lab",
+            "name": "Shuai Zhang Lab",
+            "alternateName": "复旦大学张帅课题组",
+            "url": "https://shuaizhanglab.com/",
+            "parentOrganization": {
+              "@type": "CollegeOrUniversity",
+              "name": "Fudan University",
+              "url": "https://www.fudan.edu.cn/"
+            },
+            "member": {
+              "@id": "https://shuaizhanglab.com/people.html#principalinvestigator"
+            }
+          }
+        ]
       }
       </script>
    </head>
@@ -27,7 +50,7 @@
       <div class="container site-content">
          <header class="jumbotron subhead" id="overview">
             <p class="lead"> Department of Physics Fudan University </p>
-            <h1>Shuai Zhang Lab</h1>
+            <h1><a href="/">Shuai Zhang Lab</a></h1>
          </header>
          <nav class="masthead" aria-label="Main navigation">
             <div class="navbar">
