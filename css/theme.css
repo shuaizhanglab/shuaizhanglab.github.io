@@ -878,6 +878,12 @@ ul.sponsors {
     margin-top: 18px;
 }
 
+#gallery-content .gallery-grid > figure:only-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 560px);
+}
+
 #gallery-content figure {
     margin: 0;
 }
